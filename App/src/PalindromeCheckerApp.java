@@ -1,14 +1,13 @@
 import java.util.Scanner;
-/**
- * Application entry point for UC5
- *
- * This is a Palindrome Checker App Welcome Message
- *
- * @author Developer
- * @version 1.0
- */
-import java.util.Scanner;
 
+        /**
+         * Application entry point for UC2
+         *
+         * This is a Palindrome Checker App Welcome Message
+         *
+         * @author Developer
+         * @version 1.0
+         */
 public class UseCase5PalindromeCheckerApp {
     public static void main(String[] args) {
 
