@@ -1,25 +1,35 @@
 import java.util.Scanner;
+/**
+ * Application entry point for UC5
+ *
+ * This is a Palindrome Checker App Welcome Message
+ *
+ * @author Developer
+ * @version 1.0
+ */
+import java.util.Scanner;
 
-public class PalindromeCheckerApp {
-    public static void main(String args[]) {
-        Scanner input = new Scanner(System.in);
-        /**
-         * Application entry point for UC2
-         *
-         * This is a Palindrome Checker App Welcome Message
-         *
-         * @author Developer
-         * @version 1.0
-         */
-        String str = "madam";
+public class UseCase5PalindromeCheckerApp {
+    public static void main(String[] args) {
+
+        String input = "noon";
+
+        Stack<Character> stack = new Stack<>();
+
+        for (char c : input.toCharArray()) {
+            stack.push(c);
+        }
+
         boolean isPalindrome = true;
 
-        for(int i = 0; i < str.length() / 2; i++)
-            if(str.charAt(1) != str.charAt(str.length() - 1 - i)) {
+        for (char c : input.toCharArray()) {
+            if (c != stack.pop()) {
                 isPalindrome = false;
                 break;
             }
+        }
 
-        System.out.println(isPalindrome ? "Palindrome" : "Not a Palindrome");
+        System.out.println("Input : " + input);
+        System.out.println("Is Palindrome? : " + isPalindrome);
     }
 }
