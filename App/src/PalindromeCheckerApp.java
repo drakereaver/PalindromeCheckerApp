@@ -1,3 +1,4 @@
+import java.util.Deque;
 import java.util.Scanner;
 
         /**
@@ -9,7 +10,10 @@ import java.util.Scanner;
          * @version 1.0
          */
 
-ppublic class PalindromeCheckerApp {
+
+import java.util.ArrayDeque;
+
+public class PalindromeCheckerApp {
     public static void main(String[] args) {
 
         String input = "refer";
