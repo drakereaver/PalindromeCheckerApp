@@ -1,28 +1,31 @@
 import java.util.Scanner;
 
         /**
-         * Application entry point for UC2
+         * Application entry point for UC6
          *
          * This is a Palindrome Checker App Welcome Message
          *
          * @author Developer
          * @version 1.0
          */
-public class UseCase5PalindromeCheckerApp {
+
+public class PalindromeCheckerApp {
     public static void main(String[] args) {
 
-        String input = "noon";
+        String input = "civic";
 
+        Queue<Character> queue = new LinkedList<>();
         Stack<Character> stack = new Stack<>();
 
         for (char c : input.toCharArray()) {
+            queue.add(c);
             stack.push(c);
         }
 
         boolean isPalindrome = true;
 
-        for (char c : input.toCharArray()) {
-            if (c != stack.pop()) {
+        while (!queue.isEmpty()) {
+            if (queue.remove() != stack.pop()) {
                 isPalindrome = false;
                 break;
             }
