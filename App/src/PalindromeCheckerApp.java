@@ -9,7 +9,7 @@ import java.util.Scanner;
          * @version 1.0
          */
 
-public class UseCase6PalindromeCheckerApp {
+public class PalindromeCheckerApp {
     public static void main(String[] args) {
 
         String input = "civic";
